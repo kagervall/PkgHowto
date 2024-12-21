@@ -1,0 +1,57 @@
+---
+title: "PkgHowto"
+subtitle: Build your own R-packages
+from: markdown+emoji
+format: 
+  revealjs:
+    transition: fade
+    transition-speed: fast
+    slide-number: c/t
+    width: 1600*0.8
+    height: 900*0.8
+    logo: "slu_logo.png"
+    theme: [default]
+    embed-resources: true
+    pointer:
+      pointerSize: 22
+      color: #c42104
+revealjs-plugins:
+  - pointer
+author: 
+  name: Anders Kagervall
+  affiliation: Sveriges Lantbruksuniversitet
+  email: anders.kagervall@slu.se
+date: last-modified
+---
+
+## Why R-packages
+
+-   Make your code easier to reuse for both other and yourself
+
+-   Encourage you to structure and document your code
+
+-   Possibilities to publish on CRAN ( -\> citations)
+
+## What can you package
+
+-   Anything that can be wrapped in a `function()`
+
+-   Data, either actual useful data or example data used to demonstrate your package
+
+-   Rmarkdown templates
+
+-   Shiny apps
+
+## Useful resources
+
+Anyone with an intermediate knowledge of R can create packages. Some resources and skills that will be useful are:
+
+-   The book R Packages <https://r-pkgs.org/>
+
+-   Package devtools <https://devtools.r-lib.org/>
+
+-   Package roxygen2 <https://roxygen2.r-lib.org/>
+
+-   [Quarto](https://quarto.org/) or [rmarkdown](https://rmarkdown.rstudio.com/) for vignettes
+
+-   [Github](https://github.com)
