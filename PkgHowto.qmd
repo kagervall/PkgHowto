@@ -10,10 +10,10 @@ format:
     width: 1600*0.8
     height: 900*0.8
     logo: "slu_logo.png"
-    theme: [default]
+    theme: [default, clean.scss]
     embed-resources: true
     pointer:
-      pointerSize: 22
+      pointerSize: 18
       color: #c42104
 revealjs-plugins:
   - pointer
@@ -55,3 +55,16 @@ Anyone with an intermediate knowledge of R can create packages. Some resources a
 -   [Quarto](https://quarto.org/) or [rmarkdown](https://rmarkdown.rstudio.com/) for vignettes
 
 -   [Github](https://github.com)
+
+## Package states
+
+- Source (development and testing)
+
+- Bundled (single file .tag.gz "Package source" on CRAN)
+
+- Binary (single file .zip ready to be installed)
+
+- Installed (installed on local computer ready to be used)
+
+- In memory (in use loaded by `library(pkgname)`)
+
