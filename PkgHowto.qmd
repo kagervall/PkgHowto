@@ -48,9 +48,9 @@ Anyone with an intermediate knowledge of R can create packages. Some resources a
 
 -   The book R Packages <https://r-pkgs.org/>
 
--   Package devtools <https://devtools.r-lib.org/>
+-   Package `devtools` <https://devtools.r-lib.org/> 
 
--   Package roxygen2 <https://roxygen2.r-lib.org/>
+-   Package `roxygen2` <https://roxygen2.r-lib.org/>
 
 -   [Quarto](https://quarto.org/) or [rmarkdown](https://rmarkdown.rstudio.com/) for vignettes
 
@@ -68,3 +68,19 @@ Anyone with an intermediate knowledge of R can create packages. Some resources a
 
 - In memory (in use loaded by `library(pkgname)`)
 
+## Workflow
+
+- Create package
+
+  - Call `usethis::create_package()` or
+  - In RStudio, do File > New Project > New Directory > R Package.
+
+- Develop package
+
+  - Code in folder `R`
+  - Metadata in file `DESCRIPTION` and `NAMESPACE`
+  - Data in folder `data`
+
+- Test package (`Ctrl+Shift+L` or `devtools::load_all()`)
+
+- Install package 

@@ -1,0 +1,32 @@
+---
+title: "steps-by-step"
+format: html
+editor: visual
+---
+
+# Packages
+
+-   Create `demop` using Rstudio (alt usethis::create_package)
+
+-   Look at DESCRIPTION
+
+-   Add first function `copy ..\demo\excel.R R`
+
+    -   `usethis::use_package("readxl")` and `usethis::use_package("dplyr")`
+    -   Add namespace to function calls
+    -   Add roxygen documentation and run `devtools::document` ( \#'\\dontrun{} )
+    -   look at `NAMESPACE` and folder `man`
+
+-   Add package data
+
+    -   `copy ..\demo\growth.R R`
+
+    -   `usethis::use_roxygen_md()` (to get some optional roxygen functionality)
+
+    -   create data-raw `copy ..\demo\ArterData.csv data-raw` and `copy ..\demo\DATA.R data-raw`
+
+    -   open `DATA.R` and run it (creates folder `data` and `species_data.rda`
+
+    -   run `devtools::document()` (complains about data doc)
+
+    -   also doc \`copy ..\\demo\\DATA_documentation.R R\`
