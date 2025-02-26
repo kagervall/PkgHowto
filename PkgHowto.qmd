@@ -93,8 +93,10 @@ Anyone with an intermediate knowledge of R can create packages. Some resources a
 
 -   Install package
 
-## Thanks!
+## Happy hacking!
 
 -   Slides <https://github.com/kagervall/PkgHowto>
 
 -   Demo package <https://github.com/kagervall/demop>
+
+    ![](Rlogo.svg){style="fig-align" width="493"}
