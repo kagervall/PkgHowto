@@ -30,7 +30,7 @@ date: last-modified
 
 -   Encourage you to structure and document your code
 
--   Possibilities to publish on CRAN ( -\> citations)
+-   Publish on CRAN (for fame and fortune)
 
 ## What can you package
 
@@ -42,45 +42,59 @@ date: last-modified
 
 -   Shiny apps
 
+-   Linking non-R software to R
+
 ## Useful resources
 
 Anyone with an intermediate knowledge of R can create packages. Some resources and skills that will be useful are:
 
 -   The book R Packages <https://r-pkgs.org/>
-
--   Package `devtools` <https://devtools.r-lib.org/> 
-
+-   Package `devtools` <https://devtools.r-lib.org/>
+-   Link to `devtools` [Cheetsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/package-development.pdf "Link to cheetsheet")
 -   Package `roxygen2` <https://roxygen2.r-lib.org/>
-
 -   [Quarto](https://quarto.org/) or [rmarkdown](https://rmarkdown.rstudio.com/) for vignettes
-
 -   [Github](https://github.com)
 
 ## Package states
 
-- Source (development and testing)
+-   Source (development and testing)
 
-- Bundled (single file .tag.gz "Package source" on CRAN)
+-   Bundled (single file .tag.gz "Package source" on CRAN)
 
-- Binary (single file .zip ready to be installed)
+-   Binary (single file .zip ready to be installed)
 
-- Installed (installed on local computer ready to be used)
+-   Installed (installed on local computer ready to be used)
 
-- In memory (in use loaded by `library(pkgname)`)
+-   In memory (in use loaded by `library(pkgname)`)
+
+## The source package
+
+![](PkgFolder.png)
+
+-   `R` contains your R-source files
+-   `data-raw` contains data and scripts to generate what goes into `data`
+-   `man` contains help pages (generated from comments in the R-source files)
+-   `DESCRIPTION` and `NAMESPACE` meta data about the package
 
 ## Workflow
 
-- Create package
+-   Create package
 
-  - Call `usethis::create_package()` or
-  - In RStudio, do File > New Project > New Directory > R Package.
+    -   Call `usethis::create_package()` or
+    -   In RStudio, do File \> New Project \> New Directory \> R Package.
 
-- Develop package
+-   Develop package
 
-  - Code in folder `R`
-  - Metadata in file `DESCRIPTION` and `NAMESPACE`
-  - Data in folder `data`
+    -   Code in folder `R`
+    -   Metadata in file `DESCRIPTION` and `NAMESPACE`
+    -   Data in folder `data`
 
-- Test package (`Ctrl+Shift+L` or `devtools::load_all()`)
+-   Test package (`Ctrl+Shift+L` or `devtools::load_all()`)
 
-- Install package 
+-   Install package
+
+## Thanks!
+
+-   Slides <https://github.com/kagervall/PkgHowto>
+
+-   Demo package <https://github.com/kagervall/demop>

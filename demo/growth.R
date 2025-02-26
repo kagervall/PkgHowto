@@ -4,8 +4,8 @@
 #' 
 #' This function calculates the weight of a fish from its length using 
 #' \eqn{W = a ∗ L^b} model. The coefficients alpha and beta are available for several
-#' species in the data frame `demop::species_data` and can be retrieved using the
-#' `species_coeff()` function.
+#' species in the data frame [demop::species_data] and can be retrieved using the
+#' [demop::species_coeff()] function.
 #'
 #' @param length numeric The length of the fish in cm
 #' @param alpha numeric The alpha coefficient
@@ -17,9 +17,11 @@
 #'
 #' @examples
 #' perch <- species_coeff("ABBO")
-#' length2weight(50, perch$alpha, perch$beta)
+#' length2weight(40, perch$alpha, perch$beta)
+#' trout <- species_coeff("ÖRIN")
+#' length2weight(40, trout$alpha, trout$beta)
 #' pike <- species_coeff(name ="Gädda")
-#' length2weight(50, pike$alpha, pike$beta)
+#' length2weight(40, pike$alpha, pike$beta)
 #' 
 length2weight <- function(length, alpha, beta) {
   return(alpha * 10^-6 * length^beta)

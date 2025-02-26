@@ -1,4 +1,4 @@
-#' A data frame with 147 rows and 8 columns contaning various species related constants
+#' A data frame with columns containing various species related constants
 #'
 #' Data set containing various species related constants used in Spöreg
 #'
