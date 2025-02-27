@@ -24,6 +24,14 @@ editor: visual
     -   open `DATA.R` and run it (creates folder `data` and `species_data.rda`
     -   run `devtools::document()` (complains about data doc)
     -   copy prepared docs `copy ..\demo\DATA_documentation.R R`
+    -   run `devtools::document()` (again)
+    -   Done! We now have a package with a couple of functions, a built in dataset and documentation for both.
+-   Add other files we want installed
+    - Create folder "inst" `usethis::use_directory("inst")`
+    - Copy files to be installed `copy ..\demo\*.xlsx inst\extdata`
+    - Reload and demo
+    - `myfiles <- system.file("extdata", package = "demop")`
+    - `slurp_excel(fnames = myfiles)`
 -   Install and share
     -   In Rstudio tab `Build` click `Install`
     -   Share zip-file
